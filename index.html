@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Building and Designing Bots and Bot Architectures</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+		<link rel="stylesheet" href="css/presentation.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal" style="background-color: #FBF8E8">
+			<div style="position: absolute; top: 40px; right: 40px;"><h5>@markwatsonatx</h5></div>
+			<div class="slides">
+				<section>
+					<h2>Chatbots with Node.js and Watson Conversation</h2>
+					<p>git clone https://github.com/ibm-cds-labs/cbf-nyc-chatbot</p>
+				</section>
+				</section>
+				<section>
+					<h2>What is a bot?</h2>
+					<p>An application or service that users interact with through the exchange of messages.</p>
+				</section>
+				<section>
+					<h2>Characteristics of Building a bot</h2>
+					<p>Typically built on top of a messaging platform.</p>
+					<p>Little or no user interface development required.</p>
+					<p>May or may not simulate a conversation.</p>
+				</section>
+				<section>
+					<h2>Examples</h2>
+				</section>
+				<section>
+					<h2>Order Tacos</h2>
+					<img src="img/example_food.png">
+				</section>
+				<section>
+					<h2>Appeal your parking ticket</h2>
+					<img src="img/example_parking.png">
+				</section>
+				<section>
+					<h2>Schedule a meeting</h2>
+					<img src="img/example_meeting.png">
+				</section>
+				<!--<section>-->
+					<!--<h2>Raise awareness</h2>-->
+					<!--<img src="img/example_awareness.jpg">-->
+				<!--</section>-->
+				<section>
+					<h2>Bot Platforms</h2>
+					<p>Facebook Messenger</p>
+					<p>Kik</p>
+					<p>Skype</p>
+					<p>Slack</p>
+					<p>Twilio</p>
+				</section>
+				<section>
+					<h2>Bot Frameworks</h2>
+					<p>Microsoft Bot Framework</p>
+					<p>Botkit</p>
+					<p>Smooch.io</p>
+				</section>
+				<section>
+					<h2>Conversational/Natural Language Processing Platforms</h2>
+					<p>api.ai (Google)</p>
+					<p>wit.ai (Facebook)</p>
+					<p>Watson Conversation</p>
+				</section>
+				<section>
+					<h2>Basic Bot Architecture</h2>
+					<img src="img/basic_bot_arch_1.png">
+				</section>
+				<section>
+					<h2>Add Data Services & APIs</h2>
+					<img src="img/basic_bot_arch_2.png">
+				</section>
+				<section>
+					<h2>Add NLP/Conversation</h2>
+					<img src="img/basic_bot_arch_3.png">
+				</section>
+				<section>
+					<h2>What are we building?</h2>
+					<p><img src="img/chat_sample.png"></p>
+				</section>
+				<section>
+					<h2>Health Bot Architecture</h2>
+					<p><img src="img/arch_full.png"></p>
+				</section>
+				<section>
+					<h2>Watson Conversation</h2>
+					<p><img src="img/arch_watson_convo.png"></p>
+				</section>
+				
+				<section>
+					<h2>git clone</h2>
+					<p>https://github.com/ibm-cds-labs/cbf-nyc-chatbot</p>
+				</section>
+				
+				<section>
+					<h2>How are we building it?</h2>
+					<p>Watson Conversation</p>
+				</section>
+				<section>
+					<h2>How are we building it?</h2>
+					<p>Watson Conversation</p>
+				</section>
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Play with Watson Conversation</li>
+						<li>Integrate custom Node.js app</li>
+						<li>Integrate Foursquare API</li>
+						<li>Analyze the data</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Demo</h2>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
