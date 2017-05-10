@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Building and Designing Bots and Bot Architectures</title>
+		<title>Chatbots with Node.js and Watson Conversation</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/beige.css">
@@ -28,10 +28,10 @@
 			<div class="slides">
 				<section>
 					<h2>Chatbots with Node.js and Watson Conversation</h2>
-					<p>git clone https://github.com/ibm-cds-labs/cbf-nyc-chatbot</p>
+					<p>git clone</p>
+					<p>https://github.com/ibm-cds-labs/cbf-nyc-chatbot</p>
 				</section>
-				</section>
-				<section>
+				<!--<section>
 					<h2>What is a bot?</h2>
 					<p>An application or service that users interact with through the exchange of messages.</p>
 				</section>
@@ -40,6 +40,15 @@
 					<p>Typically built on top of a messaging platform.</p>
 					<p>Little or no user interface development required.</p>
 					<p>May or may not simulate a conversation.</p>
+				</section>-->
+				<section>
+					<h2>What is a chatbot?</h2>
+					<ul>
+					<li>An application or service that users interact with through the exchange of messages</li>
+					<li>Conversational</li>
+					<li>Typically built on top of a messaging platform</li>
+					<li>Little or no user interface development required</li>
+					</ul>
 				</section>
 				<section>
 					<h2>Examples</h2>
@@ -52,10 +61,10 @@
 					<h2>Appeal your parking ticket</h2>
 					<img src="img/example_parking.png">
 				</section>
-				<section>
+				<!--<section>
 					<h2>Schedule a meeting</h2>
 					<img src="img/example_meeting.png">
-				</section>
+				</section>-->
 				<!--<section>-->
 					<!--<h2>Raise awareness</h2>-->
 					<!--<img src="img/example_awareness.jpg">-->
@@ -82,15 +91,15 @@
 				</section>
 				<section>
 					<h2>Basic Bot Architecture</h2>
-					<img src="img/basic_bot_arch_1.png">
+					<img style="background-color: white" src="img/basic_bot_arch_1.png">
 				</section>
 				<section>
 					<h2>Add Data Services & APIs</h2>
-					<img src="img/basic_bot_arch_2.png">
+					<img style="background-color: white" src="img/basic_bot_arch_2.png">
 				</section>
 				<section>
 					<h2>Add NLP/Conversation</h2>
-					<img src="img/basic_bot_arch_3.png">
+					<img style="background-color: white" src="img/basic_bot_arch_3.png">
 				</section>
 				<section>
 					<h2>What are we building?</h2>
@@ -98,39 +107,51 @@
 				</section>
 				<section>
 					<h2>Health Bot Architecture</h2>
-					<p><img src="img/arch_full.png"></p>
+					<p><img style="background-color: white" src="img/arch_full.png"></p>
 				</section>
 				<section>
 					<h2>Watson Conversation</h2>
-					<p><img src="img/arch_watson_convo.png"></p>
+					<p>Watson Conversation combines a number of cognitive techniques to help you build and train a bot - defining intents and entities and crafting dialog to simulate conversation.</p>
 				</section>
-				
+				<section>
+					<h2>Watson Conversation Concepts</h2>
+					<p>Intents</p>
+					<p>Entities</p>
+					<p>Dialog</p>
+					<p>Context</p>
+				</section>
+				<section>
+					<h2>Intents</h2>
+					<img style="background-color: white" src="img/watson_convo_intent.png">
+				</section>
+				<section>
+					<h2>Entities</h2>
+					<img style="background-color: white" src="img/watson_convo_entity1.png">
+				</section>
+				<section>
+					<h2>System Entities</h2>
+					<img style="background-color: white" src="img/watson_convo_entity2.png">
+				</section>
+				<section>
+					<h2>Dialogs</h2>
+					<img style="background-color: white" src="img/watson_convo_dialog.png">
+				</section>
+				<section>
+					<h2>Context</h2>
+					<p>Passed between Watson Conversation and application</p>
+					<p>Keeps track of current dialog in the conversation</p>
+				</section>
+				<section>
+					<h2>Context</h2>
+					<img style="background-color: white" src="img/watson_convo_context.png">
+				</section>
+				<section>
+					<h2>Let's Build a Conversation</h2>
+				</section>
 				<section>
 					<h2>git clone</h2>
 					<p>https://github.com/ibm-cds-labs/cbf-nyc-chatbot</p>
 				</section>
-				
-				<section>
-					<h2>How are we building it?</h2>
-					<p>Watson Conversation</p>
-				</section>
-				<section>
-					<h2>How are we building it?</h2>
-					<p>Watson Conversation</p>
-				</section>
-				<section>
-					<h2>Agenda</h2>
-					<ul>
-						<li>Play with Watson Conversation</li>
-						<li>Integrate custom Node.js app</li>
-						<li>Integrate Foursquare API</li>
-						<li>Analyze the data</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Demo</h2>
-				</section>
-				
 			</div>
 		</div>
 
